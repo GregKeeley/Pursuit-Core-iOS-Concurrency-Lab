@@ -18,6 +18,8 @@
 		C111F85323A180F200601840 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C111F85223A180F200601840 /* NetworkHelper.swift */; };
 		C111F85523A181EE00601840 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C111F85423A181EE00601840 /* AppError.swift */; };
 		C1685CC523A18584008D464D /* CountryAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1685CC423A18584008D464D /* CountryAPIClient.swift */; };
+		C1F16CCA23A196DD00293C7E /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F16CC923A196DD00293C7E /* CountryCell.swift */; };
+		C1F16CCC23A1A7C000293C7E /* ImageClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F16CCB23A1A7C000293C7E /* ImageClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		C111F85223A180F200601840 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		C111F85423A181EE00601840 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		C1685CC423A18584008D464D /* CountryAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryAPIClient.swift; sourceTree = "<group>"; };
+		C1F16CC923A196DD00293C7E /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
+		C1F16CCB23A1A7C000293C7E /* ImageClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 				C111F83A23A17DB600601840 /* AppDelegate.swift */,
 				C111F83C23A17DB600601840 /* SceneDelegate.swift */,
 				C111F83E23A17DB600601840 /* CountryViewController.swift */,
+				C1F16CC923A196DD00293C7E /* CountryCell.swift */,
 				C111F84E23A17E4A00601840 /* CountryDetailViewController.swift */,
 				C111F85023A17FB700601840 /* Country.swift */,
 				C1BD000323A184F2007C7EA0 /* Network */,
@@ -84,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				C111F85423A181EE00601840 /* AppError.swift */,
+				C1F16CCB23A1A7C000293C7E /* ImageClient.swift */,
 				C1685CC423A18584008D464D /* CountryAPIClient.swift */,
 				C111F85223A180F200601840 /* NetworkHelper.swift */,
 			);
@@ -169,6 +175,8 @@
 				C111F83D23A17DB600601840 /* SceneDelegate.swift in Sources */,
 				C111F85523A181EE00601840 /* AppError.swift in Sources */,
 				C1685CC523A18584008D464D /* CountryAPIClient.swift in Sources */,
+				C1F16CCC23A1A7C000293C7E /* ImageClient.swift in Sources */,
+				C1F16CCA23A196DD00293C7E /* CountryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

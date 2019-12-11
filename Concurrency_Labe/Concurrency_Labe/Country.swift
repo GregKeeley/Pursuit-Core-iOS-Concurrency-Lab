@@ -10,7 +10,7 @@ import Foundation
 
 struct Country: Decodable {
     let name: String
-    let alpha2code: String
+    let alpha2Code: String
     let capital: String
     let population: Int
 }

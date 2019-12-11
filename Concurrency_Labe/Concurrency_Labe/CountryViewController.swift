@@ -23,6 +23,7 @@ class CountryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadData()
+        tableView.dataSource = self
     }
         
         func loadData() {
@@ -36,5 +37,25 @@ class CountryViewController: UIViewController {
             })
         }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        <#code#>
+    }
 }
+extension CountryViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        countries.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "countryCell", for: indexPath) as? CountryCell else {
+            fatalError("failed to dequeue countryCell")
+        }
+        let country = countries[indexPath.row]
+        cell.configureCell(for: country)
+        return cell
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 140.0
+    }
+}
+
 

@@ -10,9 +10,18 @@ import UIKit
 
 class CountryDetailViewController: UIViewController {
 
+    @IBOutlet weak var countryPopulation: UILabel!
+    @IBOutlet weak var countryCapital: UILabel!
+    
+    var country: Country?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        loadData()
+    }
+    func loadData() {
+        navigationItem.title = country?.name
+        countryPopulation.text = country?.capital.description
+        countryCapital.text = country?.capital
     }
 }
