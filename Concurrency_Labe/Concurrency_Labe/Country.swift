@@ -13,4 +13,5 @@ struct Country: Decodable {
     let alpha2Code: String
     let capital: String
     let population: Int
+    let flag: String
 }

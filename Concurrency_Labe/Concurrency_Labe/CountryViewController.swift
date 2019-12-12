@@ -38,7 +38,7 @@ class CountryViewController: UIViewController {
         }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        <#code#>
+
     }
 }
 extension CountryViewController: UITableViewDataSource {
@@ -50,6 +50,7 @@ extension CountryViewController: UITableViewDataSource {
             fatalError("failed to dequeue countryCell")
         }
         let country = countries[indexPath.row]
+        
         cell.configureCell(for: country)
         return cell
     }

@@ -6,22 +6,22 @@
 //  Copyright © 2019 Gregory Keeley. All rights reserved.
 //
 
-import Foundation
-
+import UIKit
 struct ImageClient {
     static func fetchImage(for urlString: String, completion: @escaping (Result<UIImage?, Error>) -> ()) {
         guard let url = URL(string: urlString) else {
-            print("bad url \(url)")
-            return
+            fatalError("bad url \(urlString)")
         }
-        let dataTask = NetworkHelper.shared.performDataTask(with: url) { (data, response, error) in
+        let dataTask = URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let error = error {
-                print("error: \(error)")
+                print("Error: \(error)")
                 return
             }
             if let data = data {
-                let image = UIImage?(data: data)
+                let image = UIImage(data: data)
+                completion(.success(image))
             }
         }
+        dataTask.resume()
     }
 }
