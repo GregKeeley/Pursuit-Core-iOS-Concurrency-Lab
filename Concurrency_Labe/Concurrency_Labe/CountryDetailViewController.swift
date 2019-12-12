@@ -12,6 +12,7 @@ class CountryDetailViewController: UIViewController {
 
     @IBOutlet weak var countryPopulation: UILabel!
     @IBOutlet weak var countryCapital: UILabel!
+    @IBOutlet weak var countryFlag: UIImageView!
     
     var country: Country?
     
@@ -23,5 +24,6 @@ class CountryDetailViewController: UIViewController {
         navigationItem.title = country?.name
         countryPopulation.text = country?.capital.description
         countryCapital.text = country?.capital
+
     }
 }

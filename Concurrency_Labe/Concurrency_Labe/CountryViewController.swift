@@ -38,7 +38,12 @@ class CountryViewController: UIViewController {
         }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
+        guard let detailVC = segue.destination as? CountryDetailViewController,
+        let indexPath = tableView.indexPathForSelectedRow else {
+            fatalError("Could not retrieve an instance of CountryDetailViewController")
+        }
+        let country = countries[indexPath.row]
+        detailVC.country = country
     }
 }
 extension CountryViewController: UITableViewDataSource {

@@ -112,17 +112,40 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W97-LV-CbQ">
                                 <rect key="frame" x="0.0" y="88" width="414" height="295.5"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Population: 0000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upK-HZ-1Zs">
+                                <rect key="frame" x="8" y="444.5" width="398" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Capital" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aV4-OL-umi">
+                                <rect key="frame" x="8" y="403.5" width="398" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="upK-HZ-1Zs" firstAttribute="top" secondItem="aV4-OL-umi" secondAttribute="bottom" constant="20" id="0We-7s-V6E"/>
                             <constraint firstItem="Wji-f8-ucK" firstAttribute="trailing" secondItem="W97-LV-CbQ" secondAttribute="trailing" id="4hD-SP-cLR"/>
+                            <constraint firstItem="upK-HZ-1Zs" firstAttribute="leading" secondItem="Wji-f8-ucK" secondAttribute="leading" constant="8" id="D0R-BS-FsV"/>
+                            <constraint firstItem="Wji-f8-ucK" firstAttribute="trailing" secondItem="upK-HZ-1Zs" secondAttribute="trailing" constant="8" id="DNs-uW-uNk"/>
                             <constraint firstItem="W97-LV-CbQ" firstAttribute="leading" secondItem="Wji-f8-ucK" secondAttribute="leading" id="ELI-RF-LQV"/>
                             <constraint firstItem="W97-LV-CbQ" firstAttribute="top" secondItem="Wji-f8-ucK" secondAttribute="top" id="F0K-ry-MrE"/>
+                            <constraint firstItem="aV4-OL-umi" firstAttribute="leading" secondItem="Wji-f8-ucK" secondAttribute="leading" constant="8" id="Pqs-Hf-9Ht"/>
+                            <constraint firstItem="aV4-OL-umi" firstAttribute="top" secondItem="W97-LV-CbQ" secondAttribute="bottom" constant="20" id="SLT-sv-z9H"/>
+                            <constraint firstItem="Wji-f8-ucK" firstAttribute="trailing" secondItem="aV4-OL-umi" secondAttribute="trailing" constant="8" id="jh5-YP-1wY"/>
                             <constraint firstItem="W97-LV-CbQ" firstAttribute="height" secondItem="slu-97-jAQ" secondAttribute="height" multiplier="0.33" id="uDf-yM-KJv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Wji-f8-ucK"/>
                     </view>
                     <navigationItem key="navigationItem" id="GT7-cg-7AR"/>
+                    <connections>
+                        <outlet property="countryCapital" destination="aV4-OL-umi" id="lLf-lA-Aem"/>
+                        <outlet property="countryFlag" destination="W97-LV-CbQ" id="WEB-Yk-zSK"/>
+                        <outlet property="countryPopulation" destination="upK-HZ-1Zs" id="Qtc-dr-YdO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CIf-59-9n3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
