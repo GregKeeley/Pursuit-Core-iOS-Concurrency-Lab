@@ -26,20 +26,20 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="146"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pch-D6-zsU">
-                                                    <rect key="frame" x="20" y="11" width="62" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pch-D6-zsU">
+                                                    <rect key="frame" x="20" y="11" width="166" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capital" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBc-4u-eto">
-                                                    <rect key="frame" x="20" y="57" width="54" height="21"/>
+                                                    <rect key="frame" x="20" y="56.5" width="54" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Population" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6f6-Nc-stO">
-                                                    <rect key="frame" x="20" y="102" width="81" height="21"/>
+                                                    <rect key="frame" x="20" y="101.5" width="81" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -54,6 +54,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="bqM-aW-5eA" secondAttribute="trailing" constant="20" id="31N-ae-pkf"/>
+                                                <constraint firstItem="bqM-aW-5eA" firstAttribute="leading" secondItem="pch-D6-zsU" secondAttribute="trailing" constant="8" id="9YH-xT-tN3"/>
                                                 <constraint firstItem="6f6-Nc-stO" firstAttribute="top" secondItem="MBc-4u-eto" secondAttribute="bottom" constant="24" id="CZa-C9-vrL"/>
                                                 <constraint firstItem="pch-D6-zsU" firstAttribute="leading" secondItem="LZO-wY-8ca" secondAttribute="leadingMargin" id="Lrr-od-amq"/>
                                                 <constraint firstItem="pch-D6-zsU" firstAttribute="top" secondItem="LZO-wY-8ca" secondAttribute="topMargin" id="QaB-tk-5ic"/>
@@ -94,6 +95,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Jlg-Qr-z1o"/>
                     <connections>
+                        <outlet property="searchBar" destination="QVy-xf-j8Y" id="Ios-xq-xs4"/>
                         <outlet property="tableView" destination="VW3-9k-wU1" id="5ra-hS-RXR"/>
                     </connections>
                 </viewController>
